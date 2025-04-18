@@ -1,0 +1,103 @@
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(0.5)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "‼️‼️‼️‼️‼️ ";
+    Text = " منور ابو السكربت   "; -- ARAB TEAM
+    Duration = 5;
+})
+local args = {
+    [1] = "RolePlayName",
+    [2] = " مطور السكربت قاسم "
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = "RolePlayBio",
+    [2] = "-------------"}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(0.5)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "صُنِعُ أَلْمَطْوٌرٌ قُآسِمً  ";
+    Text = " تم تفعيل السكربت "; -- ARAB TEAM
+    Duration = 5;
+})
+ 
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Brookhaven198/-itachi-iraq/refs/heads/main/مال%20سايكو")))()
+MakeWindow({
+  Hub = {
+    Title = "1.1V BETA سكربت قاسم | QASSEM SCRIPT",
+    Animation = "🌀Welcome🌀  "
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Key System",
+    Description = "",
+    KeyLink = "",
+    Keys = {"1234"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Running the Script...",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+ 
+MinimizeButton({
+  Image = "rbxassetid://76612536896165",
+  Size = {50, 50},
+  Color = Color3.fromRGB(255, 255, 255),
+  Corner = true,
+  Stroke = true,
+  StrokeColor = Color3.fromRGB(255, 255, 255)
+})
+ 
+ 
+local Main = MakeTab({Name = "~حـسـابـاتـي~"})
+local Image = AddImageLabel(Main, {
+  Name = "قـاسـم",
+  Image = "rbxassetid://115881843808544"
+})
+local Paragraph = AddParagraph(Main, {"حساباتي لل توصل معي لو تبون اي شي اضيفه لل سكربت", "bom dia meus manos"})
+AddButton(Main, {
+  Name = "~انـسـخ يـوزري تـيـك تـوك~",
+  Callback = function()
+    setclipboard('7bssn')
+  end
+})
+ 
+AddButton(Main, {
+  Name = "~حـسـابـي روبـلـوكـس~",
+  Callback = function()
+    setclipboard('jsgshdkw')
+  end
+})
+ 
+AddButton(Main, {
+  Name = "~قـناتي يوتيوب~",
+  Callback = function()
+    setclipboard('hyper_83')
+  end
+})
+ 
+local Main6 = MakeTab({Name = "~الـمـعـلـومـات~"})
+SetSection(AddSection(Main6, {"Coowner"}), "Owner : قُآسِمً")
+ 
+local player = game.Players.LocalPlayer
+SetSection(AddSection(Main6, {"UserId"}), "Player ID : ".. player.UserId)
+ 
+local section = AddSection(Main6, {"Play Time"})
+SetSection(section, "Play Time")
+ 
+local startTime = tick()
+spawn(function()
+    while true do
+        local playTime = tick() - startTime
+        SetSection(section, "مدة اللعب: " .. math.floor(playTime / 60) .. " دقيقة و " .. math.floor(playTime % 60) .. " ثانية")
+        wait(1)
+    end
+end)
+ 
+ 
